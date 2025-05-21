@@ -55,6 +55,7 @@ This project is my personal portfolio as Full Stack Web Developer.
 ## Technologies used
 - **Frontend and Backend**: I used Next.js from React to have frontend and backend in just one file to have all the control in one single file.
 - **Style**: I used Once UI, from Next.js to bring more style and user experience to my portfolio. Aswell, I used SASS to compile better all the style code.
+- **Deployment**: I used Render because I think it's one of the easiest ways and platforms for projects and apps web deployment.
 
 ## ✨ Features
 - Responsive design across all devices
@@ -67,7 +68,7 @@ This project is my personal portfolio as Full Stack Web Developer.
 - Automatic schema and metadata generation based on the content file
 
 ## 🚀 Live Demo
-You can check out the live version of this portfolio here: [your-portfolio-url.com](https://your-portfolio-url.com)
+You can check out the live version of this portfolio here: [https://mgs-portfolio.onrender.com]
 
 ## 📌 To-Do
 - Add blog section
@@ -76,5 +77,5 @@ You can check out the live version of this portfolio here: [your-portfolio-url.c
 ## 👤 Author
 
 Matías Gómez – [@MatiKHO](https://github.com/MatiKHO)  
-Portfolio: [your-portfolio-url.com](https://your-portfolio-url.com)  
+Portfolio: [your-portfolio-url.com](https://mgs-portfolio.onrender.com)  
 Email: matiasgsdev@gmail.com
