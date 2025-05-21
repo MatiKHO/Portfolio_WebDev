@@ -52,7 +52,7 @@ This project is my personal portfolio as Full Stack Web Developer.
 ├── types.ts
 
 
-## **Technologies used**
+## Technologies used
 - **Frontend and Backend**: I used Next.js from React to have frontend and backend in just one file to have all the control in one single file.
 - **Style**: I used Once UI, from Next.js to bring more style and user experience to my portfolio. Aswell, I used SASS to compile better all the style code.
 
@@ -62,7 +62,7 @@ This project is my personal portfolio as Full Stack Web Developer.
 - Contact form with validation
 - SEO-ready metadata
 
-## **SEO**
+## SEO
 - Automatic open-graph and X image generation with next/og
 - Automatic schema and metadata generation based on the content file
 
@@ -75,10 +75,6 @@ You can check out the live version of this portfolio here: [your-portfolio-url.c
 
 ## 👤 Author
 
-**Matías Gómez** – [@MatiKHO](https://github.com/MatiKHO)  
+Matías Gómez – [@MatiKHO](https://github.com/MatiKHO)  
 Portfolio: [your-portfolio-url.com](https://your-portfolio-url.com)  
 Email: matiasgsdev@gmail.com
-<<<<<<< HEAD
-=======
-
->>>>>>> 2dee57fac41553027fedc0bf27a8beaad16a921a
