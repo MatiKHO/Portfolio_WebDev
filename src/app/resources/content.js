@@ -1,20 +1,19 @@
-import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Matías",
+  lastName: "Gómez",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Full Stack Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "matiasgsdev@gmail.com",
+  location: "Europe/Madrid", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Spanish", "English", "French"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -25,22 +24,21 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
+  
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/MatiKHO",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/matias-gomez-suarez/",
   },
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: "https://x.com/ImHideOnTop",
   },
   {
     name: "Email",
@@ -55,16 +53,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Making your dream site a reality, one line of code at a time.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">QHCLN Project</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
-    <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+    <> I'm Matías Gómez, Full Stack Web Developer & UX/UI Designer.
+      <br /> I craft seamless user experiences and bring digital ideas to reality.
     </>
   ),
 };
@@ -87,12 +84,10 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "About me",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I'm a Full Stack Web Developer with a passion for crafting seamless user experiences and bringing digital ideas to life. My work bridges the worlds of UX/UI design, interactive development, and gaming, transforming complex problems into intuitive, engaging solutions.
       </>
     ),
   },
@@ -101,78 +96,90 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Freelancer",
+        timeframe: "Present",
+        role: "Full Stack Web Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+           Developed and deployed 3+ fully responsive web applications using React, Node.js, and PostgreSQL, with mobile-first design principles.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Integrated multiple third-party APIs (e.g., Stripe, Google Maps, Auth0) into client platforms for seamless user experiences
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+          Redesigned and optimized an existing website for a national e-sports team, resulting in a 50% increase in user engagement.
           </>,
         ],
         images: [],
       },
+      {
+        company: "BISTEC",
+        timeframe: "2021 - 2024",
+        role: "General Manager",
+        achievements: [
+          <>
+            Led a team of 5 people to run a successful restaurant branch in Pozuelo de Alarcón, Madrid. 
+            My leadership and strategic planning resulted in a 20% increase in customer satisfaction ratings in Google.
+            
+          </>,
+          <>
+            Order management, staff supervision, and customer service.
+          </>,
+          <>
+            Implementation of digital tools to optimize order processing.
+            Increased sales by 30% in the last year through customer loyalty strategies.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Bistec Bar de Carnes",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true, 
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "The Bridge | Digital Talent Accelerator",
+        description: <>Studied Full Stack Web Development Bootcamp | 2025</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "eDX | Montreal University",
+        description: <>Studied an online course in UX/UI Design | 2024</>,
       },
+      {
+        name: "IEBS",
+        description: <>Studied Digital Marketing and Esports Management | 2021</>,
+      },
+      {
+        name: "Málaga University | Faculty of Economics and Business",
+        description: <>Studied Economic Sciences | 2019</>,
+      }
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true, 
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "React",
+        description: <>QHCLN Web App Redesign Project with React + HeroUI + Render and with AI chatbot integrated.</>,
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-01/qhcln.png",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-01/eventbot.png",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -180,18 +187,42 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "MERN Stack",
+        description: <>Building next gen apps with the MERN stack: Mongodb + Express.js + React + Node.js.</>,
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/project-01/lolhub.png",
             alt: "Project image",
             width: 16,
             height: 9,
           },
         ],
       },
+      {
+        title: "Visual Studio Code",
+        description: <>Able to develop web applications with Javascript with an incredible speed.</>,
+        images: [
+          {
+            src: "/images/projects/project-01/coffe-blog.png",
+            alt: "Coffe Blog",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/music-planner.png",
+            alt: "Music Planner",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/ninja-escape.png",
+            alt: "Ninja Escape",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      
     ],
   },
 };

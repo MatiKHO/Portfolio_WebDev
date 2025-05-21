@@ -5,14 +5,14 @@ const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/blog": false,
+  "/gallery": false,
 };
 
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": false,
 };
 
 import { Geist } from "next/font/google";
@@ -38,13 +38,13 @@ const font = {
 };
 
 const style = {
-  theme: "dark", // theme is not necessary when using ThemeProvider (default)
+  theme: "light", 
   neutral: "gray", // sand | gray | slate
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  solid: "contrast", // color | contrast
+  accent: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  solid: "color", // color | contrast
   solidStyle: "flat", // flat | plastic
-  border: "playful", // rounded | playful | conservative
+  border: "rounded", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
   scaling: "100" // 90 | 95 | 100 | 105 | 110
@@ -58,15 +58,15 @@ const effects = {
     radius: 100,
   },
   gradient: {
-    display: false,
-    opacity: 100,
+    display: true,
     x: 50,
-    y: 60,
+    y: -25,
     width: 100,
     height: 50,
     tilt: 0,
-    colorStart: "accent-background-strong",
-    colorEnd: "page-background",
+    colorStart: 'accent-background-strong',
+    colorEnd: 'static-transparent',
+    opacity: 50,
   },
   dots: {
     display: true,
@@ -75,15 +75,15 @@ const effects = {
     color: "brand-background-strong",
   },
   grid: {
-    display: false,
+    display: true,
     opacity: 100,
     color: "neutral-alpha-medium",
     width: "0.25rem",
     height: "0.25rem",
   },
   lines: {
-    display: false,
-    opacity: 100,
+    display: true,
+    opacity: 80,
     color: "neutral-alpha-weak",
     size: "16",
     thickness: 1,
