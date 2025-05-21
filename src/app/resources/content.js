@@ -169,7 +169,7 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "React",
+        title: "UX/UI Design",
         description: <>QHCLN Web App Redesign Project with React + HeroUI + Render and with AI chatbot integrated.</>,
         images: [
           {
@@ -187,7 +187,7 @@ const about = {
         ],
       },
       {
-        title: "MERN Stack",
+        title: "Full Stack Web Development",
         description: <>Building next gen apps with the MERN stack: Mongodb + Express.js + React + Node.js.</>,
         images: [
           {
@@ -199,8 +199,8 @@ const about = {
         ],
       },
       {
-        title: "Visual Studio Code",
-        description: <>Able to develop web applications with Javascript with an incredible speed.</>,
+        title: "Multidisciplinary app developer",
+        description: <>Able to develop any kind of websites and apps.</>,
         images: [
           {
             src: "/images/projects/project-01/coffe-blog.png",
