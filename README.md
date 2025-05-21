@@ -78,3 +78,7 @@ You can check out the live version of this portfolio here: [your-portfolio-url.c
 **Matías Gómez** – [@MatiKHO](https://github.com/MatiKHO)  
 Portfolio: [your-portfolio-url.com](https://your-portfolio-url.com)  
 Email: matiasgsdev@gmail.com
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2dee57fac41553027fedc0bf27a8beaad16a921a
